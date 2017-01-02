@@ -1,0 +1,5 @@
+{
+	"undefined": "localhost/NDM_DEV",
+	"dev": "localhost/NDM_DEV",
+	"prod": "localhost/NDM_PROD"
+}

@@ -1,0 +1,6 @@
+{
+	"MONGO_URI": "mongodb://localhost:27017/",
+    "MONGO_DB": "NDM_DEV",
+	"HOST": "http://localhost:",
+	"PORT": "8085"
+}

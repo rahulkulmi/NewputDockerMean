@@ -1,0 +1,37 @@
+{
+  "name": "NewputDockerMean",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Newput Docker Mean",
+  "main": "app.js",
+  "scripts": {
+    "seedFile": "seed-setup",
+    "seedData": "seed",
+    "test": "mocha",
+    "testController": "npm test test/rest_controllers/",
+    "testService": "npm test test/services/"
+  },
+  "dependencies": {
+    "express": "4.14.0",
+    "mongoose": "4.7.5",
+    "mongoose-auto-increment": "5.0.1",
+    "morgan": "1.7.0",
+    "body-parser": "1.15.2",
+    "method-override": "2.3.7",
+    "dateformat": "2.0.0",
+    "express-validator": "3.1.2",
+    "express-session": "1.14.2",
+    "file-stream-rotator": "0.0.7",
+    "path": "0.12.7",
+    "winston": "2.3.0",
+    "async": "2.1.4",
+    "node-mongo-seeds": "2.3.0",
+    "mocha": "3.2.0",
+    "chai": "3.5.0",
+    "chai-http": "3.0.0"
+  },
+  "devDependencies": {
+	  "eslint": "3.12.2",
+	  "eslint-plugin-node": "3.0.5"
+  }
+}
