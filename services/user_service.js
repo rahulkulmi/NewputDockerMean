@@ -25,7 +25,6 @@ module.exports.addUser = function(reqData, callback) {
 			password: reqData.password,
 			firstName: reqData.firstName,
 			lastName: reqData.lastName,
-			phoneNumber: reqData.phoneNumber,
 			address: reqData.address
 	}
 	User.findOneAndUpdate(query, userJson, options, function(err, userRes) {
