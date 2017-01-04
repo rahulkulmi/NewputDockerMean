@@ -10,9 +10,7 @@ RUN apt-get install -y build-essential
 # Install PM2
 RUN npm install -g pm2
 
-# Install mongodb
-
-ENV NODE_ENV development
+# ENV NODE_ENV development
 
 # COPY . /backend
 COPY package.json /np-docker-mean/
@@ -26,7 +24,9 @@ RUN npm install
 # Binds to port 8085
 EXPOSE 8085
 
+# Set the dockerized entry-point application
 # ENTRYPOINT ["node"]
-# Defines your runtime(define default command)
+
+# Define default command.
 # pm2 start app.js --max-memory-restart 120M -i 4
 CMD ["pm2-docker", "process.yml"]

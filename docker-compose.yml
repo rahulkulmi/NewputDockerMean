@@ -1,5 +1,5 @@
 application:
-  image: rahul/ndm:1.0
+  image: newputcontributor/docker-mean:1.0
   volumes:
   - ./:/np-docker-mean
   environment:
@@ -9,7 +9,7 @@ application:
   links:
     - mongodb
 mongodb:
-  image: rahul/mongo:2.0
+  image: newputcontributor/docker-mean:2.0
   ports:
     - "27017:27017"
   volumes:
