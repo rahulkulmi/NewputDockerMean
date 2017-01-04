@@ -25,11 +25,12 @@ app.use(logger(log.format, { 'stream': log.stream}))
 var mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 var autoIncrement = require('mongoose-auto-increment')
-var connection = mongoose.connect(config.mongodb.uri + config.mongodb.database)
+// var connection = mongoose.connect(config.mongodb.uri + config.mongodb.database)
+var connection = mongoose.connect(config.mongodb.dockerUri + config.mongodb.database)
 autoIncrement.initialize(connection)
 
 app.use(session({
-	secret: 'cf73b1aa044c7510f87fee1ceea6cf7706a26dd9c6f266e72c4815eafe90f018b26c61a1ca69272af305bbc755e2ac3310b149610d1679b8dc302e42dcb81630',
+	secret: 'c6f266e72c4815eafe90f018b26c61a1ca69272af305bbc755e2ac3310b149610d1679b8dc302',
 	saveUninitialized: false, // don't create session until something stored
 	resave: false, //don't save session if unmodified
 }))
@@ -48,7 +49,7 @@ require('./routes/routes')(app, router)
 
 // finally ready to listen
 app.listen(config.port, function() {
-	log.info('Listening on port ' + config.port)
+	log.info('NewputDockerMean listening on port ' + config.port)
 })
 
 module.exports = app

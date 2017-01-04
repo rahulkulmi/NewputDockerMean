@@ -17,6 +17,10 @@ msg.invalidPassword = "Invalid Password."
 
 msg.authLoginIdNotFound = "Login Id not found."
 msg.authPasswordNotFound = "Password not found."
+msg.authFirstNameNotFound = "First Name not found."
+msg.authLastNameNotFound = "Last Name not found."
+msg.authPhoneNumberNotFound = "Phone Number not found."
+msg.authAddressNotFound = "Address not found."
 msg.authLoginIdPasswordNotMatch = "Login ID and Password do not match."
 
 msg.serverError = "Internal server error please try again."

@@ -7,6 +7,7 @@ module.exports = function(app, router) {
 
 	// api routes
 	router.post('/auth/login', userController.loginUser)
+	router.post('/user', userController.addUser)
 
 	router.get('/ping', miscController.pingServer)
 
