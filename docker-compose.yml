@@ -1,3 +1,9 @@
+mongodb:
+  image: newputcontributor/docker-mean:2.0
+  ports:
+    - "27017:27017"
+  volumes:
+    - ./DB/data:/data/db
 application:
   image: newputcontributor/docker-mean:1.0
   volumes:
@@ -8,9 +14,3 @@ application:
     - "8085:8085"
   links:
     - mongodb
-mongodb:
-  image: newputcontributor/docker-mean:2.0
-  ports:
-    - "27017:27017"
-  volumes:
-    - ./DB/data:/data/db
